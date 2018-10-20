@@ -1,0 +1,59 @@
+INSERT INTO khe2018.routes 
+(userId, routeFile, distance, city, state, rating, routeSnapshot, description)
+VALUES
+(1, "C:\\Users\\aaron\\Documents\\khe-2018\\routes\\Route-0\\Directions from 133 West Lane Avenue, Columbus, OH, USA to Curl Drive, Columbus, OH 43210, USA.kml", 23.3, "Lewisburg", "OH", 4.3, "C:\\Users\\aaron\\Downloads\\IMG_20170911_112106.jpg", "Nice Run Today!");
+
+
+INSERT INTO khe2018.routes 
+
+(userId, routeFile, distance, city, state, rating, routeSnapshot, description)
+
+VALUES
+
+(2, "C:\\Users\\aaron\\Documents\\khe-2018\\routes\\Route-1\\Directions from 133 West Lane Avenue, Columbus, OH, USA to Curl Drive, Columbus, OH 43210, USA.kml", 23.3, "Lewisburg", "OH", 4.3, "C:\\Users\\aaron\\Downloads\\IMG_20170911_112106.jpg", "I love running");
+
+
+INSERT INTO khe2018.users
+(firstName, lastName, username, password, city, state)
+VALUES
+("Aaron", "Koenig", "aaronk11", "Bengal26", "Dayton", "OH");
+
+INSERT INTO khe2018.users
+(firstName, lastName, username, password, city, state)
+VALUES
+("Jesse", "Cavendish", "jcave14", "root", "Cleveland", "OH");
+
+INSERT INTO khe2018.users
+(firstName, lastName, username, password, city, state)
+VALUES
+("TJ", "Tahmassebi", "tjtahmas", "root", "Columbus", "OH");
+
+
+INSERT INTO khe2018.comments
+(userId, routeId, comment)
+VALUES
+(1, 1, "My First Comment!");
+
+
+INSERT INTO khe2018.comments
+(userId, routeId, comment)
+VALUES
+(2, 1, "Wow!");
+
+
+INSERT INTO khe2018.comments
+(userId, routeId, comment)
+VALUES
+(1, 1, "So Exciting");
+
+
+INSERT INTO khe2018.comments
+(userId, routeId, comment)
+VALUES
+(3, 2, "This Route is for Something else");
+
+
+INSERT INTO khe2018.comments
+(userId, routeId, comment)
+VALUES
+(2, 2, "Another Route");

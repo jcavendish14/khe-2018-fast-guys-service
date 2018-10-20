@@ -1,0 +1,29 @@
+create table khe2018.users (
+	userId INT AUTO_INCREMENT PRIMARY KEY, 
+	firstName VARCHAR(255), 
+	lastName VARCHAR(255), 
+	username VARCHAR(255), 
+	password VARCHAR(255), 
+	profilePicture VARCHAR(255), 
+	city VARCHAR(255),
+	state VARCHAR(2)
+);
+
+create table khe2018.comments (
+	commentId INT AUTO_INCREMENT PRIMARY KEY, 
+	userId INT, 
+	routeId INT, 
+	comment TEXT
+);
+
+create table khe2018.routes (
+	routeId INT AUTO_INCREMENT PRIMARY KEY, 
+	userId INT, 
+	routeFile VARCHAR(255), 
+	distance DECIMAL(8, 3), 
+	city VARCHAR(255), 
+	state VARCHAR(2), 
+	rating DECIMAL(5, 2), 
+	routeSnapshot VARCHAR(255),
+	description TEXT
+);
