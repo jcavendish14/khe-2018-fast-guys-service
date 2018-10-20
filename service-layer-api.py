@@ -1,11 +1,11 @@
 from flask import Flask
 from flask_cors import CORS
-import MySQLdb
+import pymysql
 
 app = Flask(__name__)
 CORS(app)
 
-conn = MySQLdb.connect(
+conn = pymysql.connect(
     host='127.0.0.1',
     user='root',
     passwd='root',
@@ -15,6 +15,4 @@ conn = MySQLdb.connect(
 
 @app.route("/<routeId>")
 def getRoute(routeId):
-    cursor = conn.cursor()
-    cursor.execute("SELECT * FROM routes")
-    return cursor.fetchOne()
+    return routeId
